@@ -1,1 +1,17 @@
 #!/bin/bash
+
+TARBALL='go1.10.1.linux-amd64.tar.gz'
+URL='https://dl.google.com/go/'$TARBALL
+
+#get tarball
+rm -f $TARBALL
+wget -c $URL
+
+#verify SHASUM
+shasum -a 256 -c go1.10.1_SHA256SUM
+
+#extract archive
+tar -C /usr/local -xzf $TARBALL
+
+#remove artifact
+rm -f $TARBALL

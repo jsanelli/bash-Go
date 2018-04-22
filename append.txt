@@ -1,0 +1,7 @@
+
+#golang
+#https://linode.com/docs/platform/how-to-build-your-infrastructure-using-terraform-and-linode/
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go_projects/bin
+export GOPATH="$HOME/go_projects"
+export GOBIN="$GOPATH/bin"

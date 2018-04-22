@@ -1,0 +1,5 @@
+#!/bin/bash
+#https://golang.org/doc/install
+cat append.txt >> ~/.profile
+
+source ~/.profile
