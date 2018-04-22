@@ -1,0 +1,2 @@
+# bash-Go
+install Go
